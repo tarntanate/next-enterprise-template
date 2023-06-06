@@ -1,6 +1,6 @@
 {
   "name": "next-enterprise",
-  "version": "0.0.0",
+  "version": "0.0.0-development",
   "private": true,
   "scripts": {
     "dev": "cross-env FORCE_COLOR=1 next dev",
@@ -20,7 +20,8 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "postinstall": "npx patch-package -y",
     "preinstall": "npx only-allow yarn",
-    "coupling-graph": "npx madge --extensions js,jsx,ts,tsx,css,md,mdx ./ --exclude '.next|tailwind.config.js|reset.d.ts|prettier.config.js|postcss.config.js|playwright.config.ts|next.config.js|next-env.d.ts|instrumentation.ts|e2e/|README.md|.storybook/|.eslintrc.js' --image graph.svg"
+    "coupling-graph": "npx madge --extensions js,jsx,ts,tsx,css,md,mdx ./ --exclude '.next|tailwind.config.js|reset.d.ts|prettier.config.js|postcss.config.js|playwright.config.ts|next.config.js|next-env.d.ts|instrumentation.ts|e2e/|README.md|.storybook/|.eslintrc.js' --image graph.svg",
+    "semantic-release": "semantic-release"
   },
   "dependencies": {
     "@next/bundle-analyzer": "^13.3.0",
@@ -38,7 +39,7 @@
     "@radix-ui/react-switch": "^1.0.2",
     "@radix-ui/react-tabs": "^1.0.3",
     "@radix-ui/react-toggle-group": "^1.0.3",
-    "@radix-ui/react-tooltip": "^1.0.5",
+    "@radix-ui/react-tooltip": "^1.0.6",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^9.0.2",
     "@semantic-release/git": "^10.0.1",
@@ -95,7 +96,7 @@
     "postinstall-postinstall": "^2.1.0",
     "prettier": "latest",
     "prettier-plugin-tailwindcss": "^0.3.0",
-    "semantic-release": "^21.0.1",
+    "semantic-release": "^21.0.3",
     "storybook": "^7.0.5",
     "tailwindcss": "^3.2.7",
     "ts-jest": "^29.1.0",
@@ -106,5 +107,9 @@
   "engines": {
     "node": ">=18.15.0"
   },
-  "packageManager": "yarn@1.22.19"
+  "packageManager": "yarn@1.22.19",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tarntanate/next-enterprise-template.git"
+  }
 }
