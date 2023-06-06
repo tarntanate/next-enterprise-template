@@ -1,3 +1,7 @@
+[![Code Review](https://github.com/tarntanate/next-enterprise-template/actions/workflows/cr.yml/badge.svg)](https://github.com/tarntanate/next-enterprise-template/actions/workflows/cr.yml)
+
+[![Next.js Bundle Analysis](https://github.com/tarntanate/next-enterprise-template/actions/workflows/nextjs_bundle_analysis.yml/badge.svg?branch=main)](https://github.com/tarntanate/next-enterprise-template/actions/workflows/nextjs_bundle_analysis.yml)
+
 # Next.js Enterprise Boilerplate
 
 ![Project intro image](https://github.com/Blazity/next-enterprise/assets/28964599/afde47b9-6106-47d6-a0d4-ee40deb8220d)
